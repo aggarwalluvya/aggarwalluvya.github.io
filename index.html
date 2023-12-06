@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome!</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function replaceSpacesWithPlus(str) {
+                    return str.replace(/\s+/g, '+');
+                }
+            function search(){
+                search = replaceSpacesWithPlus(document.getElementById('input').value);
+                searchTerm = "https://www.google.com/search?q="+search;
+                window.location.href = searchTerm;
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return search()">
+            <input type="text" id="input">
+        </form>
+        <div class="row">
+            <span><a href="http://www.youtube.com/"><img src="YouTube.png" class="icons"></a></span>
+            <span><a href="https://mail.google.com/mail/u/0/#inbox"><img src="Mail.png" class="icons"></a></span>
+            <span><a href="https://twitter.com/home"><img src="Twitter.png" class = "icons"></a></span>
+            <span><a href="https://www.reddit.com/"><img src="Reddit.png" class = "icons"></a></span>
+            <span><a href="https://www.netflix.com/browse"><img src="Movies.png" class="icons2"></a></span>
+            <span><a href="https://www.amazon.in"><img src="Amazon.png" class="icons"></a></span>
+            <span><a href="https://www.instagram.com/"><img src="instagram icon.png" class="icons"></a></span>
+            <span><a href="https://cuiet.codebrigade.in/dashboardFeed"><img src="Random.png"></a></span>
+        </div>
+    </body>
